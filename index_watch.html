@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Time App</title>
+	<link rel="stylesheet" type="text/css" href="css/style_watch.css"/>		
+</head>
+
+<body>
+
+	<div class="stopwatch">
+		<h3> Cronómetro </h3>
+		<div id="stopwatch">00:00:00.0</div>
+		<button onclick="stopwatch.start();">Start</button>
+		<button onClick="stopwatch.stop();">Stop</button>
+		<button onClick="stopwatch.reset();">Reset</button>
+	</div>
+		
+	<div class="timer">
+
+		<h3> Timer </h3>
+		<div id="timer">00:00:00.0</div>
+		
+		<button onclick="timer.start();">Start</button>
+		<button onClick="timer.stop();">Stop</button>
+		<button onClick="timer.reset();">Reset</button>
+		
+		<div class="botonera">
+			<div class="cuadro">
+				<label>hrs: <input type="number" id="horas" value='0' min='0'></label>
+			</div>
+			<div class="cuadro">
+				<label>min: <input type="number" id="minutos" value='0' min='0'></label>	<br>
+			</div>
+			<div class="cuadro">
+				<label>seg: <input type="number" id="segundos" value='0' min='0'></label>	<br>
+			</div>
+		</div>
+		<button onClick="timer.set();">Set</button>
+	</div>
+	
+	<script src="js/script_watch.js" type="module"></script>
+	<script src="js/script_timer.js" type="module"></script>
+	<script src="js/reloj.js" type="module"></script>
+	
+</body>
+</html>
