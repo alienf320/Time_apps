@@ -9,11 +9,18 @@ class Timer extends Reloj {
     
     update() {
         var t = this;
+		var timesRun = 0;
         if (this.value == 0) {
             this.state == "stop";
             this.stop();
             this.interval = setInterval(function () {
-                t.color()
+				timesRun += 1;
+				if(timesRun >= 9){
+					clearInterval(this.interval);
+					this.interval = 0;
+				} else {
+					t.color();
+				}
             }, 500);
         } else if (this.state == "running") {
             this.value -= this.delay;

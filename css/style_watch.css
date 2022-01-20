@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 
 BODY {
-  background: #777;
+  background: #121;
 }
 
 #stopwatch, #timer {
@@ -22,14 +22,17 @@ BODY {
 }
 
 .stopwatch, .timer {
-  width: 60%;
+  width: 40%;
+  min-width: 340px;
   padding: 10px;
   margin: 5em auto;
   text-align: center;
   background-image: url("https://media.istockphoto.com/videos/metal-texture-background-with-light-effect-stock-video-video-id1164643325?s=640x640");
   background-size: cover;
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.44) 0px 4px 10px;
+  border-style: outset;
+  box-shadow: rgba(0, 0, 0, 0.64) 0px 4px 10px;
+  
 }
 
 button {
@@ -42,10 +45,11 @@ button {
   background-color: #555;
   color: #eee;
   border: 2px solid #333;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 5px #333;
 }
 
 h3 {
+	margin: 20px auto;
 	font-family: sans-serif;
 	font-weight: 800;
 	color: #33333380;
